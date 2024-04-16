@@ -1,0 +1,24 @@
+#cover{
+    width: 100%;
+    z-index: 0; /* Set a lower z-index for the image */
+}
+.container{
+    margin-top: 300px;
+    padding: 10px;
+}
+
+#Avail{
+    text-align: center;
+    font-size: bold;
+    font-size: 200px;
+    color: darkgrey;
+    margin-top: 150px;
+
+}
+.card-img-top{
+    height: 200px;
+    width: 200px;
+}
+.width{
+width: 150px;
+}

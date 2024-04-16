@@ -1,0 +1,271 @@
+.nav-container {
+    position: relative; /* Change position to relative */
+    width: 100%; /* Ensure full width */
+}
+
+.nav-links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    margin-top: 50px; /* Move margin-top here */
+    list-style: none;
+    z-index: 1; /* Ensure navigation is above the image */
+    padding-left: 0; /* Remove default padding */
+}
+
+#cover {
+    width: 100%;
+    z-index: 0; /* Set a lower z-index for the image */
+}
+
+.nav {
+    margin-left: 50px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+.nav-links li a {
+    color: #ffffff; /* Default color */
+    text-decoration: none; /* Remove wavy text decoration */
+}
+
+.nav-links li a:hover {
+    color: #ffc107; /* Color on hover */
+}
+.carousel-slide{
+    margin-top: 100px;
+}
+
+#Avail {
+    text-align: center;
+    color: rgb(102, 100, 100);
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+#Store {
+    background-color: #f4f1f1;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden; /* Hide horizontal overflow */
+    justify-content: space-between;
+    height: 800px;
+    margin-bottom: 200px;
+}
+
+.SDes {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: rgb(105, 110, 108);
+    margin: 125px auto; /* Center the store-containing div horizontally */
+    max-width: 100%; /* Ensure the div fits within the viewport */
+    overflow-x: hidden; /* Hide horizontal overflow */
+    flex: 1; /* Distribute available space equally among child divs */
+    margin: 0 10px;
+    height: 600px;
+}
+.SDes .img {
+    margin-right: 50px; /* Add margin to create space between the image and the button */
+}
+
+
+.my-button {
+    height: 30%; /* Set the height of the button */
+    margin-top: 40px;
+}
+
+.my-button:hover {
+    background-color: #0069d9;
+    height: 30%; /* Adjust height on hover to maintain consistency */
+}
+
+.custom-link-button {
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.btn-primary {
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+    border-radius: 5px;
+}
+
+.img {
+    max-width: 100%; /* Ensure the image fits within the viewport */
+    height: 400px; /* Maintain aspect ratio */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light grey background */
+    color: #333; /* Dark grey text color */
+}
+
+header {
+    background-color: #333; /* Dark grey header background */
+    color: #fff; /* White text color */
+    text-align: center;
+    padding: 20px 0;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White container background */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.container h2 {
+    color: #333; /* Dark grey heading color */
+    border-bottom: 2px solid #333; /* Dark grey underline */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.container p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.container ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.container ul li {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #333; /* Dark grey footer background */
+    color: #fff; /* White text color */
+    padding: 20px 0;
+}
+
+.about-section {
+    width: 100%;
+}
+
+#ih {
+    height: 80%;
+}
+
+#bname {
+    text-decoration: none;
+    color: darkgray;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .nav-links li a {
+        color: #fff;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+}
+body {
+    transition: background-color 0.3s ease, color 0.3s ease; /* Added color transition */
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Light background color */
+    color: #333; /* Dark text color */
+  }
+
+
+
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    
+  }
+
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: .4s;
+    border-radius: 34px;
+      }
+
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+  }
+
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+
+  /* Additional styles for dark theme */
+  body.dark-theme {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Light text color */
+  }
+  body.dark-theme #Store{
+    background-color: grey;
+  }
+ .im{
+    height: 400px;
+    width: 400px;
+ }
+ #myCarousel{
+    margin-top: 200px;
+ }

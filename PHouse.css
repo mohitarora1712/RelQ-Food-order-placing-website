@@ -1,0 +1,22 @@
+/* Adjusting image size */
+.jumbotron img {
+    max-width: 100%; /* Ensure the image scales within its container */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Center the image */
+  #store {
+    display: block;
+    margin: 0 auto;
+  }
+  
+  /* Increase width of grids */
+  .container .col-sm-4, .container .col-md-4, .container .col-lg-4 {
+    width: 33.33%; /* Set width to 33.33% for each grid column */
+  }
+  
+  /* Adjust spacing between grids */
+  .panel {
+    margin-bottom: 20px; /* Add margin between panels */
+  }
+  
